@@ -1,0 +1,381 @@
+body{
+	width: 1080px;
+	margin: 0 auto;
+}
+h1, h2{
+	font-weight: unset;
+	text-align: center;
+}
+.contactsInfo{
+	display: flex;
+	width: 1080px;
+	margin: 0 auto;
+	height: 200px;
+	justify-content: space-between;
+}
+.contact {
+	margin: 10px;
+}
+.contact p{
+	font-size: 13pt;
+	margin: 0;
+}
+.leftBlock, .rightBlock {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+nav{
+	background: #bb9960;
+	display: flex;
+	justify-content: center;
+}
+nav ul{
+	list-style: none;
+	
+}
+nav ul li{
+	display: inline;
+
+}
+nav a{
+	color: white;
+	text-decoration: none;
+	padding: 3px;
+	margin: 0 10px;
+	font-size: 14pt;
+}
+nav a:hover{
+	border-bottom: solid 3px white ;
+}
+.slider-wrap{
+	width: 1080px;
+	height: 300px;
+	margin-top: 45px;
+	margin-bottom: 45px;
+	overflow: hidden;
+}
+.slider{
+	display: flex;
+	width: 3240px;
+	position: relative;
+	right: 0;
+	transition: all 1.5s ;
+}
+.arrows a img{
+	opacity: 0.8;
+}
+.arrows a img:hover{
+	background: red;
+	opacity: 1;
+}
+.arrows{
+	position: absolute;
+	width: 1080px;
+	height: 300px;
+	display: flex;
+	justify-content: space-between;
+}
+.prewbutton, .nextbutton{
+    display:block;
+    width:45px;
+    height:100%;
+    position: absolute;
+    top:0;
+    z-index:10;
+    }
+.prewbutton, .nextbutton img{
+	margin: 130px 0;
+}
+.prewbutton{
+	left:0;
+}
+.nextbutton{
+	right:0;
+}
+.textIndex{
+	margin: 40px
+}
+.textIndex h1, p{
+	font-weight: unset;
+	text-align: center;
+}
+.borderLine{
+	margin: 20px auto;
+	width: 70px;
+	height: 4px;
+	background: orange;
+}
+footer{
+	height: 100px;
+	background: #ccc;
+	border-top: solid 1px #303030;
+}
+.footnav {
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+}
+.footnav ul{
+	list-style: none;
+	margin: 0;
+}
+.footnav ul li{
+	display: inline;
+	margin: 0 20px;
+}
+.footnav a{
+	font-size: 12pt;
+	color: black;
+	text-decoration: none;
+}
+.footnav a:hover{
+	border-bottom: solid 2px black;
+}
+.footimges{
+	display: flex;
+	justify-content: center;
+}
+.mastercard, .visa{
+	margin: 5px;
+}
+.menu{
+	width: 810px;
+	margin: 30px auto 100px auto;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+.menu a{
+	text-decoration: none;
+}
+
+.item{
+	margin: 10px;
+	width: 250px;
+	height: 200px;
+	background: #181818;
+	transition: all 0.5s;
+	overflow: hidden;
+	display: flex;
+}
+.item:hover{
+	background: #bb9960;
+}
+.item h2{
+	font-weight: bold;
+	font-size: 20pt;
+	color: white;
+	margin: auto;
+	text-align: center;
+}
+.imgItem{
+	position: absolute;
+	z-index: 0;
+	opacity: 0.5;
+}
+.titleItem{
+	position: relative;
+	z-index: 1;
+	color: black;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+.interior{
+	width: 810px;
+	margin: 50px auto;
+}
+.restaurantItem{
+	display: flex;
+	margin: 30px;
+}
+.textRest{
+	width: 60%;	
+}
+.imgRest{
+	margin: auto;
+	padding: 20px;
+	border: solid 1px black;
+	transition: all 0.5s;
+}
+.imgRest:hover{
+	background: #bb9960;
+}
+.buttonReport{
+	margin: 30px auto;
+	width: 200px;
+	height: 30px;
+	background: red;
+	color: white;
+	border: solid 2px black;
+	display: flex;
+	justify-content: center;
+	opacity: 0.7;
+}
+.buttonReport a{
+	text-decoration: none;
+	color: black;
+}
+.buttonReport:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+h3{
+	margin: 5px auto;
+}
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	
+	display: none;
+	pointer-events: none;
+
+}
+.modalDialog:target {
+	display: block;
+    pointer-events: auto;
+    
+}
+
+.modalDialog > div {
+	width: 300px;
+	height: 450px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+    background: #fff;
+    
+}
+.modalDialog a{
+	padding: 0px 3px;
+	text-decoration: none;
+	color:black;
+	background: red;
+	border: 1px black solid;
+	opacity: 0.8;
+}
+.modalDialog a:hover{
+	opacity: 1;
+}
+.formReport{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 200px;
+	height: 400px;
+	margin: auto;
+}
+.formItem{
+	margin: auto;
+
+}
+.formItem input, select,textarea{
+	border-radius: 10px;
+	resize: none;
+	max-width: 200px;
+	font-size: 16pt;
+
+}
+
+.reports{
+	width: 810px;
+	margin: 50px auto;
+}
+
+.reportItem{
+	margin: 40px 0;
+}
+.report{
+	border: solid 1px black;
+}
+.report h2, p{
+	margin: 15px 20px;
+}
+
+.top{
+	display: flex;
+	justify-content: space-between;
+}
+.answer{
+	display: flex;
+	justify-content: left;
+	border: solid 1px black;
+	background:#bb9960;
+}
+.imgAnswer{
+	margin: auto 10px;
+}
+.textAnswer{
+	margin: 0 auto;
+}
+.page{
+	
+	margin: 50px auto;
+
+}
+.topnav {
+	margin: 50px auto;
+}
+.topnav ul{
+	list-style: none;
+	text-align: center;
+	
+}
+.topnav li{
+	display: inline;
+	margin: 0 5px;
+}
+.page a{
+	text-decoration: none;
+	color: black;
+}
+.topnav a:hover{
+	border-bottom: solid 1px black ;
+}
+.food{
+	width: 960px;
+	margin: 30px auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.foodItem{
+	width: 300px;
+	
+	margin: 10px;
+	background: #bb9960;
+
+}
+.textFood{
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.foodItem h4, p {
+	margin: 0;
+	font-size: 16pt;
+}
+.foodData{
+	display: flex;
+	justify-content: space-between;
+}
+.foodTitle, .foodDescr, .foodData {
+	margin: 5px;
+}
+.inter_page{
+	width: 810px;
+	margin: 0 auto;
+
+}
+.text_inter{
+	width: 800px;
+	margin: 40px auto;
+}
